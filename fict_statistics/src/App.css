@@ -1,0 +1,21 @@
+.App-header {
+  height: 100px;
+  background-color: gray;
+}
+
+.navigation {
+  display: flex;
+  width: 80%;
+  height: 90px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+.barSeries {
+ 
+}
