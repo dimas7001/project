@@ -74,38 +74,7 @@ export default class App extends React.Component {
         </div>
         <div className="graphics">
           <div className="radar">
-            <RadarChart 
-              data={
-                data: [{
-                  neatExplosions: 7,
-                  wow: 10,
-                  dog: 8,
-                  sickMoves: 9,
-                  nice: 7
-                }],
-                domains: [
-                  {name: 'nice', domain: [0, 100]},
-                  {name: 'explosions', domain: [6.9, 7.1], getValue: d => d.neatExplosions},
-                  {name: 'wow', domain: [0, 11]},
-                  {name: 'sickMoves', domain: [0, 20]}
-                ],
-                height: 300,
-                width: 400} 
-              style={{
-                axes: {
-                line: {},
-                ticks: {},
-                text: {}
-              },
-              labels: {
-                fontSize: 10
-              },
-              polygons: {
-                strokeWidth: 0.5,
-                strokeOpacity: 1,
-                fillOpacity: 0.1
-              }
-            }}/>  
+              
           </div>
           <div className="bar">
             <div>
@@ -113,12 +82,13 @@ export default class App extends React.Component {
                 className="barSeries"
                 xType="ordinal"
                 stackBy="y"
-                width={415}
-                height={415}>
-                <YAxis/>
+                width={444}
+                height={470}>
+                <YAxis className="YA"/>
                 <VerticalBarSeries
                   barWidth="0.85"
                   color="#ffffff"
+                  className="verticalBarSeries"
                   data={[
                     {x: '1', y: 10},
                     {x: '2', y: 30},
