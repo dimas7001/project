@@ -130,6 +130,17 @@ h2 {
   border: 1px solid purple;
 }
 
+.RadarChart {
+  fill: white;
+  font-weight: bold;
+  font-family: "Sans", sans-serif; 
+  margin: 100px;
+}
+
+.RadarChart svg {
+  overflow: visible;
+}
+
 .bar {
   display: flex;
   flex-direction: row;

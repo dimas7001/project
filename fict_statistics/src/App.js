@@ -74,7 +74,33 @@ export default class App extends React.Component {
         </div>
         <div className="graphics">
           <div className="radar">
-              
+            <RadarChart 
+              data={[{
+                wow: 10,
+                dog: 8,
+                sickMoves: 9,
+                nice: 7
+              }]}
+              domains={[
+                {name: '1', domain: [0, 100]},
+                {name: '2', domain: [0, 7.1]},
+                {name: '3', domain: [0, 11]},
+                {name: '4', domain: [0, 200]}
+              ]}
+              style={{
+                labels: {
+                  fontSize: 20
+                },
+                polygons: {
+                  strokeWidth: 0.5,
+                  strokeOpacity: 1,
+                  fillOpacity: 0.1              
+                }
+              }}
+              height={400}
+              widht={400}
+              className="RadarChart"
+            />
           </div>
           <div className="bar">
             <div>
@@ -107,7 +133,7 @@ export default class App extends React.Component {
                 stackBy="y"
                 width={444}
                 height={470}>
-                <YAxis className="YA"/>
+                <YAxis  className="YA"/>
                 <VerticalBarSeries
                   barWidth="0.85"
                   color="#ffffff"
