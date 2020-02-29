@@ -98,9 +98,30 @@ export default class App extends React.Component {
                   ]}
                 />
               </XYPlot>
+              <p className="middleBold">Загальний рівень <br/> викладання <br/> дисципліни</p>
             </div>
             <div>
-
+              <XYPlot
+                className="barSeries"
+                xType="ordinal"
+                stackBy="y"
+                width={444}
+                height={470}>
+                <YAxis className="YA"/>
+                <VerticalBarSeries
+                  barWidth="0.85"
+                  color="#ffffff"
+                  className="verticalBarSeries"
+                  data={[
+                    {x: '1', y: 25},
+                    {x: '2', y: 50},
+                    {x: '3', y: 10},
+                    {x: '4', y: 60},
+                    {x: '5', y: 40}
+                  ]}
+                />
+              </XYPlot>
+              <p className="middleBold">Оцінка власних <br/> знань після <br/> проходження курсу</p>
             </div>
           </div>
         </div>
