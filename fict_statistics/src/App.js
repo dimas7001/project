@@ -14,36 +14,25 @@ import {
   RadarChart
 } from 'react-vis';
 
-
-/*function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        
-      </header>
-    </div>
-  );
-}*/
-
 export default class App extends React.Component {
   render() {
     const mydata = {
-      data: [{
-        neatExplosions: 7,
-        wow: 10,
-        dog: 8,
-        sickMoves: 9,
-        nice: 7
-      }],
-      domains: [
-        {name: 'nice', domain: [0, 100]},
-        {name: 'explosions', domain: [6.9, 7.1], getValue: d => d.neatExplosions},
-        {name: 'wow', domain: [0, 11]},
-        {name: 'sickMoves', domain: [0, 20]}
-      ],
-      height: 300,
-      width: 400
-      }; 
+      contract: 83.5,
+      hear: 62.7,
+      amount: 13
+      };
+
+    const colors = {
+      contractCol: "red",
+      hearCol: "red"
+      };
+
+    function choseColors() {
+      if (mydata.contract >= 50) colors.contractCol = "green";
+      if (mydata.hear >= 50) colors.hearCol = "green";
+    }
+ 
+    choseColors();
 
     return (
       <div className="App">
@@ -56,18 +45,18 @@ export default class App extends React.Component {
           </div>
           <div className="statistics">
             <div>
-              <h2>83.3%</h2>
+              <h2 style={{color: colors.contractCol}}>{mydata.contract}%</h2>
               <p className="normal">опитаних вважають, що <br/>
                 КПІ варто продовжити <br/>
                 контракт з цим <br/>
                 викладачем</p>
             </div>
             <div>
-              <h2>62.7%</h2>
+              <h2 style={{color: colors.hearCol}}>{mydata.hear}%</h2>
               <p className="normal">гарно чують викладача</p>
             </div>
             <div>
-              <h2>13</h2>
+              <h2>{mydata.amount}</h2>
               <p className="normal">кількість опитаних</p>
             </div>
           </div>
