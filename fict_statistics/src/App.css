@@ -27,7 +27,7 @@ h2 {
   color: white;
   font-family: 'Sans', sans-serif;
   font-style: bold;
-  font-size: 60pt;
+  font-size: 59pt;
   line-height: 62pt;
   vertical-align: bottom;
   text-align: center;
@@ -53,12 +53,13 @@ h2 {
   color: white;
   font-family: 'Nunito', sans-serif;
   font-style: normal;
-  font-size: 30pt;
-  line-height: 36pt;
+  font-size: 25pt;
+  line-height: 32pt;
   vertical-align: bottom;
   text-align: center;
   padding: 0;
-  margin: 0; 
+  margin: 0;
+  letter-spacing: -0.6px; 
   /*border: 1px solid orange;*/
 }
 
@@ -80,7 +81,7 @@ h2 {
 }
 
 .photo div {
-  margin: 70px -25px 60px 0; 
+  margin: 94px -60px 60px 0; 
   height: 440px;
   width: 440px;
   /*border: 1px solid green;*/
@@ -92,32 +93,51 @@ h2 {
 }
 
 .photo p {
-  padding-left: 29px;
+  margin-top: -10px;
+  padding-left: 38px;
+  text-align: top;
+  line-height: 40px;
+  font-size: 38px;
+  letter-spacing: 0.5px;
 }
 
 .statistics {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: -10%;
 }
 
 .statistics div {
-  margin: 30px 0;
+  margin: 30px 0 0 25px;
 }
 
-.statistics div:first-child {
-  margin-top: 3px;
+.statistics div:nth-child(2) {
+  margin-top: 65px;
+}
+
+.statistics div:nth-child(3) {
+  margin-top: 45px;
 }
 
 .statistics h2 {
   margin: 0 0 30px 0; 
   text-align: left;
   padding-left: 80px;
+  letter-spacing: -2.5px;
+}
+
+.statistics div:nth-child(2) h2 {
+  margin-top: 10px;
+}
+
+.statistics div:nth-child(3) h2 {
+  padding-left: 76px;
+  margin-top: 12px;
 }
 
 .statistics p {
   text-align: left;
+  margin-top: -9px;
   padding-left: 80px;
 }
 
@@ -151,7 +171,7 @@ h2 {
 .bar {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: left;
   width: 100%;
   height: 42%;
   /*border: 1px solid tomato;*/
@@ -161,9 +181,19 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 48%;
+  justify-content: top;
+  padding-top: 15px;
+  width: 42.5%;
   height: 100%;
   /*border: 1px solid grey;*/
+}
+
+.bar div:nth-child(1) {
+  padding-left: 10px;
+}
+
+.bar div:nth-child(2) {
+  padding-left: -110px;
 }
 
 .YA .rv-xy-plot__axis__ticks {
@@ -180,7 +210,7 @@ h2 {
 
 .bar div p {
   padding: 0;
-  margin: 0;
+  margin: 30px 0 0 0;
   font-size: 38px;
   line-height: 43px;
   text-align: center;

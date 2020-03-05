@@ -52,7 +52,7 @@ export default class App extends React.Component {
                 викладачем</p>
             </div>
             <div>
-              <h2 style={{color: colors.hearCol}}>{mydata.hear}%</h2>
+              <h2 /*style={{color: colors.hearCol}}*/>{mydata.hear}%</h2>
               <p className="normal">гарно чують викладача</p>
             </div>
             <div>
@@ -97,8 +97,8 @@ export default class App extends React.Component {
                 className="barSeries"
                 xType="ordinal"
                 stackBy="y"
-                width={444}
-                height={470}>
+                width={350}
+                height={340}>
                 <YAxis className="YA"/>
                 <VerticalBarSeries
                   barWidth="0.85"
@@ -120,8 +120,8 @@ export default class App extends React.Component {
                 className="barSeries"
                 xType="ordinal"
                 stackBy="y"
-                width={444}
-                height={470}>
+                width={350}
+                height={340}>
                 <YAxis  className="YA"/>
                 <VerticalBarSeries
                   barWidth="0.85"
