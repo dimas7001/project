@@ -22,7 +22,7 @@ export default class App extends React.Component {
       amount: 13
       };
 
-    const colors = {
+    /*const colors = {
       contractCol: "red",
       hearCol: "red"
       };
@@ -32,7 +32,7 @@ export default class App extends React.Component {
       if (mydata.hear >= 50) colors.hearCol = "green";
     }
  
-    choseColors();
+    choseColors();*/
 
     return (
       <div className="App">
@@ -45,7 +45,7 @@ export default class App extends React.Component {
           </div>
           <div className="statistics">
             <div>
-              <h2 style={{color: colors.contractCol}}>{mydata.contract}%</h2>
+              <h2 /*style={{color: colors.contractCol}}*/>{mydata.contract}%</h2>
               <p className="normal">опитаних вважають, що <br/>
                 КПІ варто продовжити <br/>
                 контракт з цим <br/>
